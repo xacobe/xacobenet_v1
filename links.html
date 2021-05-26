@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<TITLE>buttons</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (buttons.psd) -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		b1_down = newImage("images/b1-down.gif");
+		b1_over = newImage("images/b1-over.gif");
+		b2_over = newImage("images/b2-over.gif");
+		b2_down = newImage("images/b2-down.gif");
+		b3_over = newImage("images/b3-over.gif");
+		b3_down = newImage("images/b3-down.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</HEAD>
+<BODY BGCOLOR=#FFFFFF ONLOAD="preloadImages();">
+<!-- ImageReady Slices (buttons.psd) -->
+<TABLE WIDTH=100 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+			<A HREF="leftscreen1.html" TARGET="leftscreen"
+				ONMOUSEOVER="changeImages('b1', 'images/b1-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('b1', 'images/b1.gif'); return true;"
+				ONMOUSEDOWN="changeImages('b1', 'images/b1-down.gif'); return true;"
+				ONMOUSEUP="changeImages('b1', 'images/b1-over.gif'); return true;"
+				ONCLICK="changeImages('b1', 'images/b1.gif');">
+				<IMG NAME="b1" SRC="images/b1.gif" WIDTH=100 HEIGHT=25 BORDER=0></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="leftscreen2.html" TARGET="leftscreen"
+				ONMOUSEOVER="changeImages('b2', 'images/b2-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('b2', 'images/b2.gif'); return true;"
+				ONMOUSEDOWN="changeImages('b2', 'images/b2-down.gif'); return true;"
+				ONMOUSEUP="changeImages('b2', 'images/b2-over.gif'); return true;"
+				ONCLICK="changeImages('b2', 'images/b2.gif');">
+				<IMG NAME="b2" SRC="images/b2.gif" WIDTH=100 HEIGHT=25 BORDER=0></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="leftscreen3.html" TARGET="leftscreen"
+				ONMOUSEOVER="changeImages('b3', 'images/b3-over.gif'); return true;"
+				ONMOUSEOUT="changeImages('b3', 'images/b3.gif'); return true;"
+				ONMOUSEDOWN="changeImages('b3', 'images/b3-down.gif'); return true;"
+				ONMOUSEUP="changeImages('b3', 'images/b3-over.gif'); return true;"
+				ONCLICK="changeImages('b3', 'images/b3.gif');">
+				<IMG NAME="b3" SRC="images/b3.gif" WIDTH=100 HEIGHT=25 BORDER=0></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/b4.gif" WIDTH=100 HEIGHT=295></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>

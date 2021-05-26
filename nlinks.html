@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<TITLE>links on-off</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (links on-off.psd) -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		ABC2_click = newImage("images/ABC2-click.gif");
+		ABC4_click = newImage("images/ABC4-click.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</HEAD>
+<BODY BGCOLOR=#FFFFFF ONLOAD="preloadImages();">
+<!-- ImageReady Slices (links on-off.psd) -->
+<TABLE WIDTH=100 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD>
+			<IMG SRC="images/ABC1.gif" WIDTH=100 HEIGHT=50></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="ambient.html" TARGET="ambient"
+				ONMOUSEOVER="changeImages('ABC2', 'images/ABC2.gif', 'ABC4', 'images/ABC4.gif'); return true;"
+				ONCLICK="changeImages('ABC2', 'images/ABC2-click.gif');">
+				<IMG NAME="ABC2" SRC="images/ABC2.gif" WIDTH=100 HEIGHT=60 BORDER=0></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ABC3.gif" WIDTH=100 HEIGHT=60></TD>
+	</TR>
+	<TR>
+		<TD>
+			<A HREF="concierto.html" TARGET="concierto"
+				ONMOUSEOVER="changeImages('ABC2', 'images/ABC2.gif', 'ABC4', 'images/ABC4.gif'); return true;"
+				ONCLICK="changeImages('ABC4', 'images/ABC4-click.gif');">
+				<IMG NAME="ABC4" SRC="images/ABC4.gif" WIDTH=100 HEIGHT=60 BORDER=0></A></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ABC5.gif" WIDTH=100 HEIGHT=140></TD>
+	</TR>
+</TABLE>
+<!-- End ImageReady Slices -->
+</BODY>
+</HTML>
